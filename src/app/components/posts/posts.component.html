@@ -1,0 +1,15 @@
+<div class="">
+    ID-{{choosenOne?.id}}
+    <br>
+    TITLE-{{choosenOne?.title}}
+    <br>
+    BODY-{{choosenOne?.body}}
+</div>
+
+<hr>
+<hr>
+<hr>
+<hr>
+<app-post *ngFor="let posts of posts" [post]="posts"(buttonUp)="getButtonUp($event)" class="">
+
+</app-post>
